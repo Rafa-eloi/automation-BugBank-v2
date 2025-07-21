@@ -5,7 +5,8 @@ module.exports = defineConfig({
   env: {
   },
   e2e: {
-    baseUrl: "http://localhost:3000",
+    //baseUrl: "http://localhost:3000",
+    baseUrl: "https://bugbank.netlify.app/",
     setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber());
       return config;
