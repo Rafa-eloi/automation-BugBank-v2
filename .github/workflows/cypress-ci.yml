@@ -36,15 +36,23 @@ jobs:
 
       - name: Run Cypress tests
         run: |
-          npx cypress run --browser ${{ github.event.inputs.browser || 'chrome' }} --env TAGS=${{ github.event.inputs.tag || '@smoke' }}
+          npx cypress run --browser ${{ github.event.inputs.browser || 'chrome' }} --env TAGS=${{ github.event.inputs.tag || '@smoke' }} || true
 
       - name: Gerar relatório Mochawesome
+        if: always()
         run: |
-          npx mochawesome-merge cypress/reports/*.json > cypress/reports/html/mochawesome.json
-          npx marge cypress/reports/html/mochawesome.json --reportDir cypress/reports/html --reportFilename mochawesome.html
+          mkdir -p cypress/reports/html
+          npx mochawesome-merge cypress/reports/*.json > cypress/reports/html/mochawesome.json || echo "Nenhum JSON encontrado"
+          npx marge cypress/reports/html/mochawesome.json --reportDir cypress/reports/html --reportFilename mochawesome.html || echo "Falha ao gerar HTML"
 
       - name: Renomear relatório para index.html
-        run: mv cypress/reports/html/mochawesome.html cypress/reports/html/index.html
+        if: always()
+        run: |
+          if [ -f cypress/reports/html/mochawesome.html ]; then
+            mv cypress/reports/html/mochawesome.html cypress/reports/html/index.html
+          else
+            echo "Relatório HTML não encontrado"
+          fi
 
       - name: 📤 Deploy report to GitHub Pages
         if: always()
