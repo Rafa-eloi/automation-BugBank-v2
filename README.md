@@ -52,5 +52,9 @@ Este projeto foi desenvolvido como parte de uma prova técnica, com o objetivo d
    ```bash
    git clone https://github.com/seu-usuario/automation-BugBank.git
    ```
+2. Execute o comando:
+    ```bash
+   npm install
+   ```
 
 
