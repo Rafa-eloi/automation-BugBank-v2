@@ -12,4 +12,12 @@ module.exports = defineConfig({
     },
     specPattern: "cypress/e2e/step_definitions/*.feature"
   },
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir: 'cypress/reports',
+    overwrite: false,
+    html: true,
+    json: true,
+  },
+
 });
