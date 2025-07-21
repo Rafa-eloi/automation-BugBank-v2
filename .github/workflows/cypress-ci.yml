@@ -45,6 +45,9 @@ jobs:
           name: cypress-reports
           path: cypress/reports
 
+      - name: Renomear relatório para index.html
+        run: mv cypress/reports/html/mochawesome.html cypress/reports/html/index.html
+
       - name: 📤 Deploy report to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3

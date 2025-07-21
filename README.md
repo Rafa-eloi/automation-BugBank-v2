@@ -78,13 +78,12 @@ npx cypress open
 ---
 
 📊 Relatórios de Execução
-Após a execução dos testes, um relatório HTML será gerado automaticamente.
+
+- Após a execução dos testes, um relatório HTML será gerado automaticamente.
 
 ✅ Como acessar:
-O relatório é publicado automaticamente via GitHub Pages após a execução da pipeline.
-
-Acesse o link abaixo para visualizar:
-https://rafa-eloi.github.io/automation-BugBank-v2
+- O relatório é publicado automaticamente via GitHub Pages após a execução da pipeline.
+- Acesse o link para visualizar: https://rafa-eloi.github.io/automation-BugBank-v2
 
 ---
 
