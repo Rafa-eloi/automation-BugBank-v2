@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:run": "cypress run ",
-    "posttest": "mochawesome-merge cypress/reports/*.json > cypress/reports/output.json && marge cypress/reports/output.json -f report -o cypress/reports"
+    "posttest": "mochawesome-merge cypress/reports/*.json > cypress/reports/html/mochawesome.json && marge cypress/reports/html/mochawesome.json --reportDir cypress/reports/html --reportFilename mochawesome.html"
   },
   "devDependencies": {
     "cypress": "^13.13.1",
