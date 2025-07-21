@@ -46,15 +46,60 @@ Este projeto foi desenvolvido como parte de uma prova técnica, com o objetivo d
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 📦 Instalação das Dependências
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/automation-BugBank.git
-   ```
-2. Execute o comando:
-    ```bash
-   npm install
-   ```
+```bash
+# Clone o repositório
+git clone https://github.com/Rafa-eloi/automation-BugBank-v2.git
+cd automation-BugBank-v2
+
+# Instale os pacotes necessários
+npm install
+```
+---
+
+🚀 Como Executar os Testes
+Via terminal:
+```bash
+# Executar todos os testes
+npx cypress run
+
+# Executar testes com tag específica (ex: @smoke)
+npx cypress run --env TAGS="@smoke"
+
+# Executar testes com navegador específico (ex: chrome)
+npx cypress run --browser chrome
+```
+
+Via interface gráfica:
+```bash
+npx cypress open
+```
+---
+
+📊 Relatórios de Execução
+Após a execução dos testes, um relatório HTML será gerado automaticamente.
+
+✅ Como acessar:
+O relatório é publicado automaticamente via GitHub Pages após a execução da pipeline.
+
+Acesse o link abaixo para visualizar:
+https://rafa-eloi.github.io/automation-BugBank-v2
+
+---
+
+🔁 CI/CD - GitHub Actions
+O projeto conta com uma pipeline automatizada que:
+
+- Roda os testes todos os dias úteis às 8h da manhã ⏰
+- Executa os testes automaticamente em Pull Requests
+- Permite executar testes com parâmetros de tag e navegador (via workflow dispatch)
+- Gera e publica os relatórios HTML no GitHub Pages
+
+---
+
+📌 Observações
+Como a aplicação não possui banco de dados, os dados são voláteis. Portanto, o teste de login sempre cria um novo usuário via fluxo de cadastro antes de executar o login.
+
 
 
