@@ -12,13 +12,13 @@
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2025-09-17T11:09:47.181Z",
-    "end": "2025-09-17T11:10:39.374Z",
-    "duration": 52193
+    "start": "2025-09-18T11:09:49.039Z",
+    "end": "2025-09-18T11:10:40.368Z",
+    "duration": 51329
   },
   "results": [
     {
-      "uuid": "d61a6d53-72e9-420a-a0b4-20789682b4d1",
+      "uuid": "fad3834b-1449-4a55-a310-627727235f5f",
       "title": "",
       "fullFile": "cypress/e2e/step_definitions/cadastro.feature",
       "file": "cypress/e2e/step_definitions/cadastro.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "01d8f442-3c6a-431c-9ce6-2e5e524d0ca5",
+          "uuid": "464995b8-b336-4a30-bf78-803f44e653fd",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastro com todos os campos preenchidos e saldo ativado",
               "fullTitle": "Cadastro Cadastro com todos os campos preenchidos e saldo ativado",
               "timedOut": null,
-              "duration": 3243,
+              "duration": 2913,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "07c8fe19-6de1-40e2-9bad-c734554cc751",
-              "parentUUID": "01d8f442-3c6a-431c-9ce6-2e5e524d0ca5",
+              "uuid": "f86c860e-293e-4a7f-b7b2-65ed38e2eef0",
+              "parentUUID": "464995b8-b336-4a30-bf78-803f44e653fd",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Cadastro sem preencher nome",
               "fullTitle": "Cadastro Cadastro sem preencher nome",
               "timedOut": null,
-              "duration": 1788,
+              "duration": 1640,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "a5f1122d-5124-4423-a180-b7b41fc1b7e0",
-              "parentUUID": "01d8f442-3c6a-431c-9ce6-2e5e524d0ca5",
+              "uuid": "120d491a-b40a-4a37-abb8-eae860dbabe4",
+              "parentUUID": "464995b8-b336-4a30-bf78-803f44e653fd",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Cadastro sem preencher email",
               "fullTitle": "Cadastro Cadastro sem preencher email",
               "timedOut": null,
-              "duration": 6827,
+              "duration": 6772,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -87,8 +87,8 @@
                 "estack": "AssertionError: Timed out retrying after 5000ms: Expected to find content: 'Email não pode ser vazio' but never did.\n    at Context.eval (cypress/e2e/step_definitions/cadastro/cadastro.js:43:24)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
                 "diff": null
               },
-              "uuid": "a0c784b4-b14e-40c9-af68-0701c78935aa",
-              "parentUUID": "01d8f442-3c6a-431c-9ce6-2e5e524d0ca5",
+              "uuid": "9307c879-55a6-4402-91c1-02242e7246cc",
+              "parentUUID": "464995b8-b336-4a30-bf78-803f44e653fd",
               "isHook": false,
               "skipped": false
             },
@@ -96,7 +96,7 @@
               "title": "Cadastro sem preencher senha",
               "fullTitle": "Cadastro Cadastro sem preencher senha",
               "timedOut": null,
-              "duration": 6728,
+              "duration": 6686,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -109,8 +109,8 @@
                 "estack": "AssertionError: Timed out retrying after 5000ms: Expected to find content: 'Senha não pode ser vazio' but never did.\n    at Context.eval (cypress/e2e/step_definitions/cadastro/cadastro.js:43:24)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
                 "diff": null
               },
-              "uuid": "92dc6c1c-ee6e-4927-93d5-b1c63b4ea70c",
-              "parentUUID": "01d8f442-3c6a-431c-9ce6-2e5e524d0ca5",
+              "uuid": "01c9d9ae-b4e7-4cbe-a514-6c5146c0cdf9",
+              "parentUUID": "464995b8-b336-4a30-bf78-803f44e653fd",
               "isHook": false,
               "skipped": false
             },
@@ -118,7 +118,7 @@
               "title": "Cadastro sem preencher confirmação de senha",
               "fullTitle": "Cadastro Cadastro sem preencher confirmação de senha",
               "timedOut": null,
-              "duration": 6714,
+              "duration": 6514,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -131,8 +131,8 @@
                 "estack": "AssertionError: Timed out retrying after 5000ms: Expected to find content: 'Confirmar senha não pode ser vazio' but never did.\n    at Context.eval (cypress/e2e/step_definitions/cadastro/cadastro.js:43:24)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
                 "diff": null
               },
-              "uuid": "9e3a39f4-a1f4-4d41-8feb-c7000d89ecbb",
-              "parentUUID": "01d8f442-3c6a-431c-9ce6-2e5e524d0ca5",
+              "uuid": "f6c94bf1-0027-4fa1-900f-37fdcc48210b",
+              "parentUUID": "464995b8-b336-4a30-bf78-803f44e653fd",
               "isHook": false,
               "skipped": false
             },
@@ -140,7 +140,7 @@
               "title": "Cadastro com senha e confirmação diferentes",
               "fullTitle": "Cadastro Cadastro com senha e confirmação diferentes",
               "timedOut": null,
-              "duration": 6845,
+              "duration": 6877,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -153,26 +153,26 @@
                 "estack": "AssertionError: Timed out retrying after 5000ms: Expected to find content: 'As senhas devem ser iguais' but never did.\n    at Context.eval (cypress/e2e/step_definitions/cadastro/cadastro.js:43:24)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
                 "diff": null
               },
-              "uuid": "80e3dd59-8357-44bf-ba90-5ec161bd2727",
-              "parentUUID": "01d8f442-3c6a-431c-9ce6-2e5e524d0ca5",
+              "uuid": "dc1be8be-453e-4e87-9c0f-0f31e7bb185a",
+              "parentUUID": "464995b8-b336-4a30-bf78-803f44e653fd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "07c8fe19-6de1-40e2-9bad-c734554cc751",
-            "a5f1122d-5124-4423-a180-b7b41fc1b7e0"
+            "f86c860e-293e-4a7f-b7b2-65ed38e2eef0",
+            "120d491a-b40a-4a37-abb8-eae860dbabe4"
           ],
           "failures": [
-            "a0c784b4-b14e-40c9-af68-0701c78935aa",
-            "92dc6c1c-ee6e-4927-93d5-b1c63b4ea70c",
-            "9e3a39f4-a1f4-4d41-8feb-c7000d89ecbb",
-            "80e3dd59-8357-44bf-ba90-5ec161bd2727"
+            "9307c879-55a6-4402-91c1-02242e7246cc",
+            "01c9d9ae-b4e7-4cbe-a514-6c5146c0cdf9",
+            "f6c94bf1-0027-4fa1-900f-37fdcc48210b",
+            "dc1be8be-453e-4e87-9c0f-0f31e7bb185a"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 32145,
+          "duration": 31402,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -188,7 +188,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "aae8352d-6e51-46a6-9b35-4050d187ce84",
+      "uuid": "52cd6476-32a4-4806-9938-2bd5ac3f3900",
       "title": "",
       "fullFile": "cypress/e2e/step_definitions/login.feature",
       "file": "cypress/e2e/step_definitions/login.feature",
@@ -197,7 +197,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6945adee-ea37-4469-8309-b414b3bbf725",
+          "uuid": "d527f054-b439-4f71-8cc6-405ead5bb038",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -208,7 +208,7 @@
               "title": "Tentativa de login sem preencher campos obrigatórios",
               "fullTitle": "Login Tentativa de login sem preencher campos obrigatórios",
               "timedOut": null,
-              "duration": 5525,
+              "duration": 5510,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -221,8 +221,8 @@
                 "estack": "AssertionError: Timed out retrying after 5000ms: expected '[ <p.input__warging>, 5 more... ]' to contain text 'Usuário e senha precisam ser preenchidos', but the text was 'É campo obrigatórioÉ campo obrigatório'\n    at LoginPage.verificarMensagemCampoObrigatorio (cypress/e2e/pages/loginPage.js:25:39)\n    at Context.eval (cypress/e2e/step_definitions/login/login.js:47:12)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
                 "diff": "- 'É campo obrigatórioÉ campo obrigatório'\n+ 'Usuário e senha precisam ser preenchidos'\n"
               },
-              "uuid": "b635ee40-0777-457b-abe1-6618140da25a",
-              "parentUUID": "6945adee-ea37-4469-8309-b414b3bbf725",
+              "uuid": "0279b716-c378-4344-8514-93cb3b2fd1c3",
+              "parentUUID": "d527f054-b439-4f71-8cc6-405ead5bb038",
               "isHook": false,
               "skipped": false
             },
@@ -230,7 +230,7 @@
               "title": "Tentativa de login com usuário inválido",
               "fullTitle": "Login Tentativa de login com usuário inválido",
               "timedOut": null,
-              "duration": 949,
+              "duration": 854,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -239,8 +239,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "b81fd70f-f6d4-4b4a-851a-22e5577255da",
-              "parentUUID": "6945adee-ea37-4469-8309-b414b3bbf725",
+              "uuid": "4efb7ab4-aa3a-42e4-9f73-f42ca7549002",
+              "parentUUID": "d527f054-b439-4f71-8cc6-405ead5bb038",
               "isHook": false,
               "skipped": false
             },
@@ -248,7 +248,7 @@
               "title": "Login com sucesso",
               "fullTitle": "Login Login com sucesso",
               "timedOut": null,
-              "duration": 2238,
+              "duration": 2155,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -257,8 +257,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "dd3c75f4-019e-4753-937d-431d1f7b484a",
-              "parentUUID": "6945adee-ea37-4469-8309-b414b3bbf725",
+              "uuid": "883e373d-ed83-4124-adfd-8679bd193370",
+              "parentUUID": "d527f054-b439-4f71-8cc6-405ead5bb038",
               "isHook": false,
               "skipped": false
             },
@@ -266,7 +266,7 @@
               "title": "Logout do sistema",
               "fullTitle": "Login Logout do sistema",
               "timedOut": null,
-              "duration": 2547,
+              "duration": 2341,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -275,24 +275,24 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "d668c5d0-20fd-45d0-b177-2916ca59d658",
-              "parentUUID": "6945adee-ea37-4469-8309-b414b3bbf725",
+              "uuid": "6a3e509f-c65d-4114-8d95-2b35ed1564be",
+              "parentUUID": "d527f054-b439-4f71-8cc6-405ead5bb038",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b81fd70f-f6d4-4b4a-851a-22e5577255da",
-            "dd3c75f4-019e-4753-937d-431d1f7b484a",
-            "d668c5d0-20fd-45d0-b177-2916ca59d658"
+            "4efb7ab4-aa3a-42e4-9f73-f42ca7549002",
+            "883e373d-ed83-4124-adfd-8679bd193370",
+            "6a3e509f-c65d-4114-8d95-2b35ed1564be"
           ],
           "failures": [
-            "b635ee40-0777-457b-abe1-6618140da25a"
+            "0279b716-c378-4344-8514-93cb3b2fd1c3"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 11259,
+          "duration": 10860,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
